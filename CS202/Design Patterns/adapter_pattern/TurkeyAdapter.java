@@ -1,8 +1,8 @@
 package adapter_pattern;
 
 public class TurkeyAdapter implements Duck {
-    Turkey turkey;
-    int flyingTime;
+    private Turkey turkey;
+    private int flyingTime;
 
     public TurkeyAdapter(Turkey turkey, int flyingTime) {
         this.turkey = turkey;
@@ -19,6 +19,6 @@ public class TurkeyAdapter implements Duck {
     }
 
     public void swim() {
-        throw new UnsupportedOperationException();
+        System.out.println("Can't swim");
     }
 }
