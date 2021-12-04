@@ -7,10 +7,7 @@ public class DuckTestDrive {
         WildTurkey wildTurkey = new WildTurkey();
         Duck wildTurkeyAdapter = new TurkeyAdapter(wildTurkey, 3);
 
-        Ostrich ostrich = new Ostrich();
-        Duck ostrichAdapter = new OstrichAdapter(ostrich);
-
-        Duck[] ducks = { mallardDuck, wildTurkeyAdapter, ostrichAdapter };
+        Duck[] ducks = { mallardDuck, wildTurkeyAdapter };
         for (Duck duck : ducks) {
             testDuck(duck);
             System.out.println();
